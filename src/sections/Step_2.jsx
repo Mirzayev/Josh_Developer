@@ -16,14 +16,14 @@ const Step_2 = () => {
             </div>
 
             <div className='grid grid-cols-2 relative my-10  gap-4'>
-                <div className='text-white bg-slate-900 pl-[30px] md:py-4 pho:py-2'>
+                <div data-aos="fade-right"  className='text-white bg-slate-900 pl-[30px] md:py-4 pho:py-2'>
                     <p className='text-green-500'>One Link</p>
                     <h2 className='lg:text-[50px] font-bold text-slate-400'>ALL You Create.</h2>
                     <h2 className='lg:text-[50px] font-bold'>One Link</h2>
-                    <img className='pt-4' src={phone} alt=""/>
+                    <img  className='pt-4' src={phone} alt=""/>
                 </div>
 
-                <div className='text-white bg-slate-900 pl-[30px] py-4'>
+                <div data-aos="fade-left"  className='text-white bg-slate-900 pl-[30px] py-4'>
                     <p className='text-green-500'>Collect Subscribers</p>
                     <h2 className='lg:text-[50px] font-bold text-slate-400'>Emails.</h2>
                     <h2 className='lg:text-[50px] font-bold text-slate-400'>Phone #s.</h2>

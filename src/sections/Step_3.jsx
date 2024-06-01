@@ -18,7 +18,7 @@ const Step_3 = () => {
                 <div className='flex lg:mt-[100px]'>
                     <div className='text-white'>
                         <p className='font-semibold mt-4 pho:flex justify-center pho:my-4 lg:block'>Create & Share</p>
-                        <img className='flex justify-center  sm:w-full pho:block lg:hidden' src={image} alt=""/>
+                        <img data-aos="fade-down"  className='flex justify-center  sm:w-full pho:block lg:hidden' src={image} alt=""/>
                         <div className='pho:flex flex-wrap justify-center lg:block'>
                             <h3 className='lg:text-[50px] font-semibold lg:w-[450px] pho:text-[30px] lg:mt-20 '>Reach Your</h3>
                             <h3 className='lg:text-[50px] font-semibold pho:text-[30px]'>Audience  <span className='text-blue-500'>Directly.</span></h3>
@@ -31,7 +31,7 @@ const Step_3 = () => {
                         </div>
                     </div>
                     <div className='pho:hidden pho:overflow-hidden lg:block'>
-                        <img className='' src={image} alt=""/>
+                        <img data-aos="fade-down" className='' src={image} alt=""/>
                     </div>
                 </div>
             </div>

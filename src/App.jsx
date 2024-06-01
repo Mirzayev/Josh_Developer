@@ -1,4 +1,4 @@
-import SHeader from "./sections/SHeader.jsx";
+import SHeader from "./sections/header/SHeader.jsx";
 import WhyMarico from "./sections/WhyMarico.jsx";
 import Step_1 from "./sections/Step_1.jsx";
 import Step_2 from "./sections/Step_2.jsx";
@@ -11,7 +11,7 @@ function App() {
 
   return (
       <div className='flex justify-center'>
-    <div className='bg-black max-w-[1640px] w-full'>
+    <div className='bg-black max-w-[1940px] w-full'>
       <SHeader/>
       <WhyMarico/>
       <Step_1/>

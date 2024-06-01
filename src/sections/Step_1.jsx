@@ -38,7 +38,7 @@ const Step_1 = () => {
                         </div>
                     </div>
                     <div className='pho:hidden lg:block'>
-                        <img className='' src={Screen} alt=""/>
+                        <img data-aos="fade-down" className='' src={Screen} alt=""/>
                     </div>
                 </div>
             </div>

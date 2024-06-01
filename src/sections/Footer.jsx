@@ -8,10 +8,10 @@ const Footer = () => {
         <div className='w-[90%] m-auto'>
             <div>
                 <div className='flex justify-center mt-[50px] mb-2 '>
-                    <img className='sm:w-[100px] pho:w-[70px]' src={Logo} alt=""/>
+                    <img data-aos="fade-down" className='sm:w-[100px] pho:w-[70px]' src={Logo} alt=""/>
 
                 </div>
-                <h3 className='flex justify-center text-white font-bold pho:text-[30px] sm:text-[40px] lg:text-[50px] 2xl:text-[100px]'>Get
+                <h3 data-aos="fade-up" className='flex justify-center text-white font-bold pho:text-[30px] sm:text-[40px] lg:text-[50px] 2xl:text-[100px]'>Get
                     Started Now</h3>
                 <p className='flex justify-center text-slate-200'>Setup is easy and takes under 5 minutes.</p>
                 <div className='flex justify-center my-4'>
