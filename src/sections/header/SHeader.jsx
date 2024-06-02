@@ -5,6 +5,7 @@ import SignUp from "../SignUp.jsx";
 import './header.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ResponMenu from "../ResponMenu.jsx";
 
 const SHeader = () => {
 
@@ -13,6 +14,12 @@ const SHeader = () => {
     }, [])
 
     const [showSignUp, setShowSignUp] = useState(false)
+    const [showMenu, setShowMenu] = useState(false)
+
+
+    const SeeMenu = () => {
+        setShowMenu(true)
+    }
 
     const ShowSignUp = () => {
         setShowSignUp(true)
@@ -30,9 +37,19 @@ const SHeader = () => {
                 </div>
             </div>}
 
+            {showMenu && <div className="absolute header h-screen">
+                <div className="w-full  flex justify-center items-center">
+                    <div className="">
+                        <ResponMenu showMenu={setShowMenu}/>
+                    </div>
+
+                </div>
+            </div>}
+
             <div className='flex justify-between pho:mt-8 w-[90%] m-auto'>
-                <div data-aos="fade-down" className='flex items-center text-white font-sans text-3xl font-semibold gap-4'>
-                    <img src={Logo1} alt=""/>
+                <div data-aos="fade-down"
+                     className='flex items-center text-white font-sans text-3xl font-semibold gap-4'>
+                <img src={Logo1} alt=""/>
                     <p>Marico</p>
                 </div>
 
@@ -60,7 +77,7 @@ const SHeader = () => {
                             className='bg-blue-600 h-10 px-3 rounded-lg duration-200 hover:bg-blue-700'>Sign up
                     </button>
 
-                    <i className="fa-solid fa-bars text-white pho:block md:hidden text-xl"></i>
+                    <i onClick={() => SeeMenu()} className="fa-solid fa-bars text-white pho:block md:hidden text-xl"></i>
 
                 </div>
 
@@ -96,6 +113,9 @@ const SHeader = () => {
                 <p className='text-white'>1000+</p>
                 <p className='text-slate-700'>creators have already started</p>
             </div>
+
+
+
         </div>
     )
 }
